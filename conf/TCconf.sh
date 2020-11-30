@@ -56,7 +56,7 @@ echo '/etc/shadow' >> /opt/.filetool.lst         # pour etre backupé
 
 # sshd config for root access
 # ---------------------------
-tce-load -wi openssh
+sudo -u tc tce-load -wi openssh
 cd /usr/local/etc/ssh/
 cp sshd_config.orig sshd_config
 
