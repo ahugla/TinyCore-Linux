@@ -14,7 +14,6 @@
 #   rm -rf /tmp/TinyCore-Linux
 #   git clone https://github.com/ahugla/TinyCore-Linux.git
 #   sudo chmod 755 /tmp/TinyCore-Linux/conf/TCconf.sh
-#   sed -i '/box/a \loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap\' /opt/bootsynch.sh
 # 
 #   /tmp/TinyCore-Linux/conf/TCconf.sh  [Password]
 
@@ -40,7 +39,7 @@ cd /tmp
 # ------------------
 sudo loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap
 # make it persistent
-sed -i '/box/a \loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap\' /opt/bootsynch.sh
+sed -i '/box/a \loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap\' /opt/bootsync.sh
 
 
 
