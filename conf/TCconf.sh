@@ -54,8 +54,8 @@ cd /usr/local/etc/ssh/
 sudo cp sshd_config.orig sshd_config
 sudo chmod 777 sshd_config
 echo "#ALEX CONF" >> sshd_config
-sudo chmod 755 sshd_config
 echo "PermitRootLogin yes" >> sshd_config
+sudo chmod 755 sshd_config
 sudo /usr/local/etc/init.d/openssh start
 sudo chmod 777 /opt/bootlocal.sh
 sudo echo '/usr/local/etc/init.d/openssh start &' >> /opt/bootlocal.sh  # demarrer SSH au boot
