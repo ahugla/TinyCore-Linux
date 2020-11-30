@@ -14,6 +14,8 @@
 #   rm -rf /tmp/TinyCore-Linux
 #   git clone https://github.com/ahugla/TinyCore-Linux.git
 #   sudo chmod 755 /tmp/TinyCore-Linux/conf/TCconf.sh
+#   sed -i '/box/a \loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap\' /opt/bootsynch.sh
+# 
 #   /tmp/TinyCore-Linux/conf/TCconf.sh  [Password]
 
 
@@ -41,7 +43,7 @@ sudo loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap
 sed -i '/box/a \loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap\' /opt/bootsynch.sh
 
 
-pause
+
 
 
 # set password for tc and root
@@ -51,7 +53,7 @@ echo -e "$1\$1" | passwd root
 sudo echo '/etc/shadow' >> /opt/.filetool.lst         # pour etre backupé
 
 
-pause
+
 
 # sshd config for root access
 # ---------------------------
@@ -74,7 +76,7 @@ sudo echo '/opt/bootlocal.sh'  >> /opt/.filetool.lst    # pour etre backupé
 sudo echo '/usr/local/etc/ssh' >> /opt/.filetool.lst    # pour etre backupé
 
 
-pause
+
 
 
 
