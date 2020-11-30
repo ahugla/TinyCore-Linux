@@ -11,6 +11,7 @@
 #   sudo loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap 
 #   cd /tmp
 #   tce-load -wi git
+#   rm -rf /tmp/TinyCore-Linux
 #   git clone https://github.com/ahugla/TinyCore-Linux.git
 #   sudo chmod 755 /tmp/TinyCore-Linux/conf/TCconf.sh
 #   /tmp/TinyCore-Linux/conf/TCconf.sh  [Password]
