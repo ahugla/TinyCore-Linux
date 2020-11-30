@@ -48,7 +48,10 @@ sed -i '/box/a \loadkmap < /usr/share/kmap/azerty/fr-latin9.kmap\' /opt/bootsync
 # set password for tc and root
 # ----------------------------
 echo -e "$1\n$1" | passwd tc
+
+sudo su
 echo -e "$1\n$1" | passwd root
+exit
 sudo echo '/etc/shadow' >> /opt/.filetool.lst         # pour etre backupé
 
 
