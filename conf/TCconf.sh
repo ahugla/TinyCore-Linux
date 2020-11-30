@@ -52,14 +52,18 @@ sudo echo '/etc/shadow' >> /opt/.filetool.lst         # pour etre backupé
 tce-load -wi openssh
 cd /usr/local/etc/ssh/
 sudo cp sshd_config.orig sshd_config
+
 sudo chmod 777 sshd_config
 echo "#ALEX CONF" >> sshd_config
 echo "PermitRootLogin yes" >> sshd_config
-sudo chmod 755 sshd_config
+sudo chmod 644 sshd_config
+
 sudo /usr/local/etc/init.d/openssh start
+
 sudo chmod 777 /opt/bootlocal.sh
 sudo echo '/usr/local/etc/init.d/openssh start &' >> /opt/bootlocal.sh  # demarrer SSH au boot
 sudo chmod 755 /opt/bootlocal.sh
+
 sudo echo '/opt/bootlocal.sh'  >> /opt/.filetool.lst    # pour etre backupé
 sudo echo '/usr/local/etc/ssh' >> /opt/.filetool.lst    # pour etre backupé
 
