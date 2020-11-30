@@ -15,7 +15,7 @@
 #   git clone https://github.com/ahugla/TinyCore-Linux.git
 #   sudo chmod 755 /tmp/TinyCore-Linux/conf/TCconf.sh
 # 
-#   /tmp/TinyCore-Linux/conf/TCconf.sh  [Password]
+#   sudo /tmp/TinyCore-Linux/conf/TCconf.sh  [Password]
 
 
 
